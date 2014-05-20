@@ -236,30 +236,33 @@ dl.error dd {
 
 /* Color differences between the two tab types */
 #content ul.formTabs {
-    background-color: #ddd;
-    border: 0.3em solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 #edit-bar {
-    background-color: #75ad0a;
-    border: 0.25em solid #75ad0a;
-    font-size: 80%;
+    
     min-height: 2em;
     margin-bottom: 1em;
     padding-top: 0.05em;
 }
 #content-views {
     float: left;
-    background-color: #75ad0a;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid #ddd;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-radius: 4px 4px 0 0;
 }
 #content-views a {
-    color: White;
+    
+    
 }
 
 /* Shared CSS between the two tab types */
 #edit-bar,
 #content ul.formTabs {
     display: block;
-    border-style: solid solid none solid;
     margin-left: 0;
     border-top-right-radius: 0.5em;
     border-top-left-radius: 0.5em;
@@ -267,7 +270,11 @@ dl.error dd {
     -webkit-border-top-left-radius: 0.5em;
     -moz-border-radius-topleft: 0.5em;
     -moz-border-radius-topright: 0.5em;
+    
+    
+    
 }
+    
 #content li.formTab {
     display: inline;
     margin-right:0.25em;
@@ -282,8 +289,13 @@ dl.error dd {
     line-height: 2em;
     padding: 0 0.75em;
     text-decoration: none;
-    border: none;
+    border: 1px solid #ddd;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    
     margin: 0 ;
+    margin-bottom: -1px;
 }
 #content-views li.selected a,
 #content li.formTab a.selected {
@@ -293,9 +305,21 @@ dl.error dd {
 #content-views li a:hover,
 #content li.formTab a.selected,
 #content li.formTab a:hover {
-    background: White;
-    color: Black;
+     color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    ;
 }
+#content-views li a:hover,
+#content li.formTab a:hover {
+   background-color: #eee;
+   border: 1px solid #fff;
+   border-bottom-color: #ddd;
+    
+}
+
 #content-views li.selected a,
 #content-views li a:hover,
 #content li.formTab a.selected,
@@ -335,8 +359,8 @@ dl.error dd {
 
 #contentActionMenus dl.actionMenu a,
 #contentActionMenus dl.actionMenu.activated dd {
-    background-color: #75ad0a;
-    color: White;
+    
+    
     z-index: 5;
 }
 #contentActionMenus dl.actionMenu.activated dd {
@@ -363,7 +387,7 @@ dl.error dd {
 
 #contentActionMenus {
     float: right;
-    background: #75ad0a;
+    
     margin: 0;
     position: relative;
     top: -0.23em;
