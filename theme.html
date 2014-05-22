@@ -20,6 +20,37 @@
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+     <link rel="stylesheet" type="text/css" media="screen" href="++resource++fhf.toolbox/jplist.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="++resource++fhf.toolbox/bubbleview.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="++resource++fhf.toolbox/drawer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="++resource++fhf.toolbox/rateit.css" />
+  
+        
+    <script src="++resource++fhf.toolbox/jplist.min.js"></script>
+    <script src="++resource++fhf.toolbox/jquery.rateit.min.js"></script>
+
+
+    <script type="text/javascript">
+      (function($) {
+        $("document").ready(function() {
+          $(".tool-list").accordion({
+            active: false,
+            collapsible: true,
+            header: "div.header",
+          });
+
+          $('#toolbox').jplist({
+            items_box: '.list',
+            item_path: '.drawer-bubble',
+            panel_path: '.panel',
+          });
+        });
+      })(jQuery);
+    </script>
+  
+
+    
   </head>
 
   <body>
@@ -43,15 +74,15 @@
           </ul>
           <ul id="account-info" class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#"
-                    class="dropdown-toggle"
-                    data-toggle="dropdown">
-                    Account
-                    <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                
-              </ul>
+                <a href="#"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown">
+                      Account
+                      <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  
+                </ul>
             </li>
           </ul>
           <form id="searchbox" class="navbar-form navbar-right">
