@@ -670,7 +670,7 @@ li#portaltab-index_html{
   background: #1b1e21;
 }
 .header-23-sub .background {
-  background-image: url('http://nextrailkc.com/common-files/img/header/img-video.jpg');
+  background-image: url('++theme++fhf-plone-theme/common-files/img/header/img-video.jpg');
 }
 @media (max-width: 991px) {
   .header-23-sub {
@@ -711,7 +711,7 @@ li#portaltab-index_html{
   width: 67px;
   height: 67px;
   margin: 0 50px;
-  background: url("http://nextrailkc.com/common-files/img/header/btn-play.png") no-repeat;
+  background: url("++theme++fhf-plone-theme/common-files/img/header/btn-play.png") no-repeat;
 }
 @media (max-width: 991px) {
   .header-23-sub .hero-unit .btn-play {
