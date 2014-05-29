@@ -17,6 +17,17 @@
     display: none;
 }
 
+
+
+#portal-personaltools{
+    display:block;
+    float: right;
+    padding-top: 15px;
+    padding-left: 15px;
+    
+}
+
+
 #content .documentDescription,
 #content #description {
     margin-left: 0;
