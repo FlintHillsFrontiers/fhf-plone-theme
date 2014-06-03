@@ -7,13 +7,14 @@ html{
     height: 100%;
 }
 
-body {
-    padding-top:50px;
+body {   
     height: 100%;
+    padding-top: 50px;
 }
 
 #parent-fieldname-text-ac7fbab3129a4306b45eaf2ae0d38d7f{
     height: 100%;
+    margin-top:-50px;
 }
 div.visualIEFloatFix{
     height: 100%;
