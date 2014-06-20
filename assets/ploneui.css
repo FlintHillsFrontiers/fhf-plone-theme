@@ -250,11 +250,34 @@ dl.error dd {
     border-bottom: 1px solid #ddd;
 }
 #edit-bar {
-    
-    min-height: 2em;
+      padding-right: 15px;
+    padding-left: 15px;
+    display:block;
+    margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  height:32px;
+  border-bottom: 1px solid #ddd;
     margin-bottom: 1em;
     padding-top: 0.05em;
 }
+@media (min-width: 768px) {
+  #edit-bar {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  #edit-bar {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  #edit-bar {
+    width: 1170px;
+  }
+}
+
+
 #content-views {
     float: left;
     margin-right: 2px;
@@ -274,7 +297,6 @@ dl.error dd {
 #edit-bar,
 #content ul.formTabs {
     display: block;
-    margin-left: 0;
     border-top-right-radius: 0.5em;
     border-top-left-radius: 0.5em;
     -webkit-border-top-right-radius: 0.5em;
