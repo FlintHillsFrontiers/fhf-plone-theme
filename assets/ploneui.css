@@ -397,8 +397,11 @@ dl.error dd {
     z-index: 5;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-    border-bottom: 0.5em solid #75ad0a;
+        border: 1px solid #ddd;
         right: -3px;
+        background-color: #fff;
+        margin-top: 12px;
+        box-shadow: rgba(0, 0, 0, 0.172549) 0px 6px 12px 0px;
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
 #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
@@ -1113,6 +1116,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #portal-personaltools {
     margin-bottom: 0;
     position: relative;
+    margin-top: -200px;
 }
 
 #portal-personaltools li {
@@ -1120,10 +1124,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 #portal-personaltools dt a {
-    color: #999;
+    color: #428BCA;
 }
 #portal-personaltools dt a:hover {
-    color: #fff;
+    color: #999;
     text-decoration: none;
 }
 
@@ -1132,7 +1136,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 #portal-personaltools dd {
-    background-color: #2C2C2C;
+    background-color: transparent;
     position: absolute;
     top: 2.1em;
     margin-left: -1em;
@@ -1144,10 +1148,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 
 #portal-personaltools dd a {
-    color: #999;
+    color: #428BCA;
 }
 #portal-personaltools dd a:hover {
-    color: #fff;
+    color: #999;
     text-decoration: none;
 }
 
