@@ -21,7 +21,7 @@
 
 #portal-personaltools{
     display:block;
-    float: right;
+  
     padding-top: 15px;
     padding-left: 15px;
     
@@ -442,7 +442,6 @@ dl.error dd {
 }
 
 dl.actionMenu {
-    float: right;
     white-space: nowrap;
     position: relative;
     margin-left: 0.5em;
@@ -840,7 +839,7 @@ dl.enableFormTabbing dd {
 }
 .field input[type="text"][name$=".title"],
 input#title {
-    width: 100%;
+    width: 90%;
 }
 .field.error input[type="text"][name$=".title"],
 .error input#title {
@@ -1115,8 +1114,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 #portal-personaltools {
     margin-bottom: 0;
-    position: relative;
-    margin-top: -200px;
 }
 
 #portal-personaltools li {
@@ -1124,10 +1121,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 #portal-personaltools dt a {
-    color: #428BCA;
+    color: rgb(66, 139, 202);
 }
 #portal-personaltools dt a:hover {
-    color: #999;
+    color: #777;
     text-decoration: none;
 }
 
@@ -1148,10 +1145,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 
 #portal-personaltools dd a {
-    color: #428BCA;
+    color: rgb(66, 139, 202);
 }
 #portal-personaltools dd a:hover {
-    color: #999;
+    color: #777;
     text-decoration: none;
 }
 
