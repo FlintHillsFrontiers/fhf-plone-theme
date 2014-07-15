@@ -30,7 +30,12 @@
         <copy attributes="href" css:theme="#brand" css:content="#portal-logo" />
 
         <!-- Tabs -->
-        <replace css:theme-children="#tabs" css:content-children="#portal-globalnav" />
+        <replace css:theme-children="#navbar" css:content-children="#portal-globalnav" />
+
+        <replace css:content-children="ul#portal-globalnav li"><xsl:attribute name="class">menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown</xsl:attribute><xsl:apply-templates select="node()"/></replace>       
+        <replace css:content-children="ul#portal-globalnav ul"><xsl:attribute name="class">dropdown-menu</xsl:attribute><xsl:apply-templates select="node()"/></replace>
+        <replace css:content-children="ul#portal-globalnav a.hasChildrens"><xsl:attribute name="class">dropdown-toggle</xsl:attribute><xsl:attribute name="data-toggle">dropdown</xsl:attribute><xsl:attribute name="data-target">#</xsl:attribute><xsl:apply-templates select="node()"/><span class="caret"></span></replace>
+        <replace css:content-children="ul#portal-globalnav ul li"><xsl:attribute name="class">menu-item menu-item-type-post_type menu-item-object-page</xsl:attribute><xsl:apply-templates select="node()"/></replace>
 
         <!-- Personal tools -->
         <replace css:theme="#account-info" css:content="#portal-personaltools" />
