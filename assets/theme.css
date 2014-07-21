@@ -396,6 +396,7 @@ li#portaltab-index_html{
 .header-18 .header-18-sub.pt-perspective {
   position: relative;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
