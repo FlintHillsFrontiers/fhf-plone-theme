@@ -17,7 +17,10 @@
     display: none;
 }
 
+table.listing{
+    width: 100%;
 
+}
 
 #portal-personaltools{
     display:block;
