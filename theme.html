@@ -26,6 +26,42 @@
     <link rel="stylesheet" type="text/css" media="screen" href="++resource++fhf.toolbox/rateit.css" />
     <script src="++resource++fhf.toolbox/jplist.min.js"></script>
     <script src="++resource++fhf.toolbox/jquery.rateit.min.js"></script>
+        <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", '1', {packages:['corechart']});
+      google.setOnLoadCallback(drawChart2);
+      function drawChart2() {
+        var query = new google.visualization.Query(
+          'https://docs.google.com/spreadsheets/d/1bVPVWuIPElv_AJPsNuzHRjfj6SRYx8ZP_-bmQU3lGBg/edit#gid=0');
+
+          query.send(handleQueryResponse);
+      }
+
+      function handleQueryResponse(response) {
+        if (response.isError()) {
+          alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+          return;
+        }
+
+        var data = response.getDataTable();
+        var options = {
+           'title':'Prioritized Strategies',
+           'isStacked': true,
+           legend: { position: 'top', maxLines: 3 },
+           'fontName': 'Helvetica',
+           'colors': ['#00AEEF', '#ED1C24', '#FFDE17', '#F7941E', '#00A14B'],
+           'chartArea':{'height':'80%', 'left':350},
+           'height': 1000,
+           'fontSize': 14,
+            
+          
+        };
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        
+        chart.draw(data, options);
+      }
+    </script>
   </head>
   <body>
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -52,7 +88,8 @@
             </li>
           </ul>
           <form id="searchbox" class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search">
+            <input type="text" name="SearchableText" 
+	      class="form-control" placeholder="Search">
           </form>
         </div>
       </div>
@@ -65,7 +102,7 @@
         </p>
       </div>
     </div>
-    <div style="width:100%; background-color:#f8f8f8;border-top:1px solid #e7e7e7; padding-top:15px;">
+    <div style="width:100%; background-color:#f8f8f8;border-top:1px solid #e7e7e7; padding-top:15px; margin-top:15px;">
       <div class="container" style="min-height:150px;">
         <div class="row">
           <div class="col-md-4">
