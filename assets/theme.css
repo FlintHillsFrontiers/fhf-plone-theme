@@ -1,5 +1,15 @@
 /* Theme-specific styling */
 
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #bdbdbd;
+}
+.navbar-inverse .navbar-brand {
+    color: #bdbdbd;
+}
+
+
+
 /* Styles for the plan section */
 
  div.quote{
