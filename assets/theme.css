@@ -18,6 +18,14 @@
     color:#ffffff;
 }
 
+
+div#fhf-plan p{
+    font-family: 'Lora', serif;
+    font-size: 18px !important;
+    line-height:1.67;
+    margin-bottom: 20px;
+}
+
 /* Styles for the dashboard section */
 
 .axis path,
@@ -35,6 +43,13 @@
 	font-family: sans-serif;
 	font-size: 11px;
 }
+
+div.metric{
+    padding-bottom: 25px;
+    margin-bottom:25px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
 
 /* 60px to make the container go all the way to the bottom of the topbar */
 
