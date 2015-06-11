@@ -10,23 +10,22 @@
 
 
 
-/* Styles for the plan section */
+div.metric{
+    padding-bottom: 25px;
+    margin-bottom:25px;
+    border-bottom: 1px solid #d3d3d3;
+}
 
- div.quote{
+
+#edit-bar{
+    padding-top:50px;
+}
+
+div.quote{
     padding:40px;
     line-height: 2;
     color:#ffffff;
 }
-
-
-div#fhf-plan p{
-    font-family: 'Lora', serif;
-    font-size: 18px !important;
-    line-height:1.67;
-    margin-bottom: 20px;
-}
-
-/* Styles for the dashboard section */
 
 .axis path,
 .axis line {
@@ -34,7 +33,7 @@ div#fhf-plan p{
 	stroke: black;
 	shape-rendering: crispEdges;
 }
-
+			
 .axis text {
 	font-family: sans-serif;
 	font-size: 11px;
@@ -42,12 +41,6 @@ div#fhf-plan p{
 .legend text {
 	font-family: sans-serif;
 	font-size: 11px;
-}
-
-div.metric{
-    padding-bottom: 25px;
-    margin-bottom:25px;
-    border-bottom: 1px solid #d3d3d3;
 }
 
 
@@ -59,7 +52,15 @@ html{
 
 body {
     height: 100%;
-    padding-top: 50px;
+    margin-top:50px;
+
+}
+
+div#fhf-plan p{
+    font-family: 'Lora', serif;
+    font-size: 18px !important;
+    line-height:1.67;
+    margin-bottom: 20px;
 }
 
 img.brand{
@@ -73,6 +74,14 @@ div.visualIEFloatFix{
 
 h1.documentFirstHeading{
     display: none;
+}
+
+
+#vision{
+    background: url(http://preview.flinthillsfrontiers.org/vision-and-goals/5516114488_33b5868d81_z.jpg);
+    background-size: cover;
+    color:#fff;
+    background-position: 50% 40%;
 }
 
 
@@ -1812,3 +1821,41 @@ dl.portlet a.ui-state-hover, dl.portlet .ui-state-hover a, dl.portlet .ui-state-
 dl.portlet .ui-state-highlight a, dl.portlet .ui-widget-content .ui-state-highlight a, dl.portlet .ui-widget-header .ui-state-highlight a { color: #000000 !important; }
 
 }
+
+@media print {
+   .tool-rating {
+       display:none;
+   }
+    .btn-lg{
+        display: none;
+    }
+    #tool-navigation{
+        display: none;
+    }
+    .btn-group-justified{
+        display: none;
+    }
+    img{
+        max-height: 300px;
+    }
+
+     a[href]:after {
+        content: none !important;
+     }
+     #disqus_thread{
+        display: none;
+    }
+    h6{
+        font-size: 10px;
+    }
+    body{
+        font-size: 12px;
+    }
+    .footer{
+        display: none;
+    }
+    .jumbotron{
+        padding:0px;
+    }
+}
+

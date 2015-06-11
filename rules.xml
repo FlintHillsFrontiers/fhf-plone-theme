@@ -24,6 +24,8 @@
         <!-- Head elements -->
         <replace css:theme="html head title" css:content="html head title" />
         <after css:theme-children="html head" css:content="html head base" />
+        <after css:theme-children="html head" css:content="html head link.plugin" />
+        <after css:theme-children="html head" css:content="html head link.required" />
         <after css:theme-children="html head" css:content="html head script" />
 
         <!-- Logo -->
@@ -50,8 +52,9 @@
         <!-- Portal messages -->
 
         <!-- Main columns -->
-	<drop css:content=".managePortletFallback" />
-        <replace css:content-children="#content" css:theme-children="#content" />
+	    <drop css:content=".managePortletFallback" />
+        <replace css:theme="#content" css:content="#fhf-plan" css:if-content="" />
+        <replace css:theme-children="#content" css:content-children="#content" />
         <replace css:content-children="#portal-column-one" css:theme-children="#left-column" />
         <replace css:content-children="#portal-column-two" css:theme-children="#right-column" />
 
